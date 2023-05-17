@@ -5,17 +5,19 @@
 
 *{
     box-sizing: border-box;
+	
 }
 
 body {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
+	
 }
 
 header {
 	background: linear-gradient(to top, #dddddd,#ffffff);
-	background-color:#f2f2f2;
+	background-color:#efe4e3;
 	padding: 0.650;
 	height: auto;
 }
@@ -175,14 +177,14 @@ nav a img{
   }
 
   .container{ 
-	background-color: #f2f2f2;
-	background: linear-gradient(to bottom, #dddddd, #ffffff);
+	background: #f3f0ef;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
 	margin: 0 auto;
 	padding: 0 3.125rem;
+	width: 100%;
   }
 
   .services p{
@@ -203,9 +205,28 @@ nav a img{
 	height: auto;
   }
 
-  footer{
+.footer{
+	background-color: #efe4e3;
 	font-family: oswald;
-	margin: 2rem;
-	font-weight: 100;
+	width: 100%;
+	text-align: center;
+	margin: 10px 0px;
+	padding: 2px;
+	
   }
+  .footer-row{
+
+	width: 100%;
+	font-size: 30px;
+  }
+.title-footer{
+
+	width: 100%;
+	font-size: 30px;
+  }
+
+.redes-fotter:hover .redes-fotter:active{
+	color: #8c3cad;
+}
+
   
