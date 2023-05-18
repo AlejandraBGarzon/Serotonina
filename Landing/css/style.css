@@ -1,85 +1,80 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');/*font-family: 'Bowlby One', cursive; LETRA GRUESA*/ 
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');/*font-family: 'Bakbak One', cursive; LETRA TITULOS*/
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
 *{
     box-sizing: border-box;
-	
+}
+p10{
+	font-family: 'Bowlby One', cursive;
+	font-weight:bold ;
+	letter-spacing: 10px;
+	font-size: 30px;
+	color: #843f11;
+	display: contents;
+	border-radius: 3px solid #e3bebb;
 }
 
 body {
-	font-family: Arial, sans-serif;
+	font-family: 'Raleway', sans-serif;
 	margin: 0;
 	padding: 0;
 	
 }
 
 header {
-	background: linear-gradient(to top, #dddddd,#ffffff);
-	background-color:#efe4e3;
-	padding: 0.650;
-	height: auto;
-}
-
-nav{
-height: 5rem;
-display: flex;
-align-items: center;
-justify-content: space-around;
-flex-direction: row;
+	background: #f5f4f4;
 }
 
 nav ul {
-	list-style: none;
-	margin: auto;
-	padding: 0;
-	display: flex;
-	max-width:none;
-	justify-content: flex-end;
-	align-items: center;
-	font-family: nunito;
-	font-size: 1.25rem;
-	font-weight: bold;
-}
-
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: 'Raleway', sans-serif;
+		font-size: 1.25rem;
+		font-weight: bold;
+		width: 100%;
+		letter-spacing: 5px;
+	}
 nav li {
 	display: flex;
 	justify-content: space-evenly;
 	margin-left: 1.25rem;
 	margin-right: 1.25rem;
-	font-family: free serif;
+	font-family: 'Raleway', sans-serif;
 	text-align: center;
 }
 
 nav a {
 	display: flex;
-	width:fit-content;
-    height:fit-content;
-	color:#002244;
 	text-decoration: none;
-	align-items: center;
-	margin-left: 0;
-	font-family:sans-serif;
-	font-size: 1.3rem;
+	align-items:flex-start;
+	font-family: 'Bakbak One', cursive;
+	font-size: 2rem;
 	font-weight: bold;
+	color: #f26465	;
 }
 
 nav a h3 {
 	margin-top: auto;
 	font-size:1.4rem;
-	font-family:Oswald;
+	font-family:'Raleway', sans-serif;
 	font-weight: bold;
 	color:#002244;
 	text-align: center;
-  }
-
-nav a img{
-	float: left;
-	max-height: 4.125rem;
-	margin-left: 0.938rem;
-	margin-right: 0.938rem;
 }
+.nav-item{
+	padding: 0px 30px 20px 30px;
+	display: flex;
+
+
+}
+
 
 .main {
 	max-width: 75rem;
@@ -230,3 +225,8 @@ nav a img{
 }
 
   
+/* CSS PAGINA NOSOTROS */
+div.container{
+	display: block;
+	width: 100%;
+}
