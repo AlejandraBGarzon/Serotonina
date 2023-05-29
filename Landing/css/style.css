@@ -8,10 +8,12 @@
     box-sizing: border-box;
 }
 p10{
+  
 	font-family: 'Bowlby One', cursive;
 	font-weight:bold ;
 	letter-spacing: 10px;
 	font-size: 30px;
+  
 	color: #843f11;
 	display: contents;
 	border-radius: 3px solid #e3bebb;
@@ -105,19 +107,18 @@ nav a h3 {
   }
   
   .hero .cta-button {
-	align-self: flex-start;
+	align-items: center;
   }
   */
   
 .cta-button {
-	background-color:#8c3cad;
-	color: #eaf2f8;
-	background: linear-gradient(to right, #8b3cad, #6d1a89cd);
+	background-color: #f26465;
+	background: linear-gradient(to bottom, #f26465, #c42b2c);
+	color: #f4f5f5;
 	display: inline-block;
-	font-family: Montserrat;
-	font-style: initial;
-	text-transform:capitalize;
-	font-size: 100%;
+	font-family: Montserrat, sans-serif;
+	text-transform: capitalize;
+	font-size: 1.3rem;
 	text-decoration: none;
 	font-weight: bold;
 	padding: 1% 1%;
@@ -125,6 +126,10 @@ nav a h3 {
 	border-width: 0;
 	margin: 0.938rem 9.375rem;
 }
+
+.cta-button:hover {
+	background-color: #d33e3f; 
+  }
 
 .services h2{
 	color:  #071a52;
