@@ -3,26 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/formulario1.css">
+    <link rel="stylesheet" href="css/formularios.css">
 
     <title>Document</title>
 </head>
 <body>
-    
-    <form>
+  <a id="inicio-link" href="index.html">Regresar al Inicio</a>
+
+    <form id="miFormulario">
         <h2>Solicita una Evaluación Personalizada: Tu bienestar es nuestra prioridad</h2>
         <label for="name">Nombre:</label>
-        <br>
         <input type="text" id="name" name="name" required>
       <br>
       <br>
       <label for="edad">Edad:</label>
-      <br>
       <input type="number" id="edad" name="edad" required>
       <br>
       <br>
       <label for="genero">¿Cuál es tu género?</label>
-      <br>
       <select id="genero" name="genero">
         <option value="">Selecciona una opción</option> 
         <option value="masculino">Masculino</option>
@@ -34,7 +32,6 @@
       <br>
       <br>
         <label for="previous-services">¿Has tenido acceso a servicios de salud mental anteriormente?</label>
-        <br>
         <select id="previous-services" name="previous-services" required>
           <option value="">Selecciona una opción</option>
           <option value="yes">Sí</option>
@@ -44,7 +41,6 @@
       <br>
       <br>
       <label for="motivo_consulta">¿Cuál es el motivo por el que buscas servicios de salud mental?</label>
-      <br>
       <select id="motivo_busqueda" name="motivo_busqueda" required onchange="mostrarSubcategorias(this.value)">
         <option value="">Selecciona una opción</option>
         <option value="ansiedad">Ansiedad</option>
@@ -106,14 +102,32 @@
         </select>
       </div>         
 
-      <br>
       <label for="especificar_motivo">Si seleccionaste "Otro", cuéntanos tu motivo:</label>
-      <br>
     <textarea id="especificar_motivo" name="especificar_motivo" rows="4"></textarea>
       <br>
       <br>
+      <label for="enfoque">¿Deseas un enfoque específico?</label>
+<select id="enfoque" name="enfoque" onchange="mostrarEnfoques(this.value)">
+  <option value="no">No</option>
+  <option value="si">Sí</option>
+  <option value="no_sabe_enfoque">Aún no lo sé</option>
+</select>
+
+<div id="enfoques-terapeuticos" style="display: none;">
+  <label for="enfoques-psicologicos">Selecciona un enfoque terapéutico:</label>
+  <select id="enfoques-psicologicos" name="enfoques-psicologicos">
+    <option value="cognitivo-conductual">Enfoque cognitivo-conductual</option>
+    <option value="psicodinamico">Enfoque psicodinámico</option>
+    <option value="humanista">Enfoque humanista</option>
+    <option value="sistemico">Enfoque sistémico</option>
+    <option value="Otro">Otro</option>
+  </select>
+
+  <label for="otro-enfoque">Si seleccionaste "Otro", especifica el enfoque:</label>
+  <textarea id="otro-enfoque" name="otro-enfoque" rows="4"></textarea>
+</div>
+
         <label for="perception">¿Qué tan preocupante consideras tu situación actual de salud mental?</label>
-        <br>
         <select id="perception" name="perception" required>
           <option value="">Selecciona una opción</option>
           <option value="not-worried">No me preocupa</option>
@@ -125,53 +139,12 @@
       <br>
       <br>
         <label for="additional-comments">Comentarios adicionales:</label>
-        <br>
         <textarea id="additional-comments" name="additional-comments"></textarea>
       <br>
       <br>
         <button type="submit">Enviar</button>
       </form>
      
-      <script>
-        function mostrarSubcategorias(valor) {
-          var subcategoriasAnsiedad = document.getElementById("subcategorias_ansiedad");
-          var subcategoriasDepresion = document.getElementById("subcategorias_depresion");
-          var subcategoriasEstres = document.getElementById("subcategorias_estres");
-          var subcategoriasRelaciones = document.getElementById("subcategorias_relaciones");
-          
-          if (valor === "ansiedad") {
-            subcategoriasAnsiedad.style.display = "block";
-            subcategoriasDepresion.style.display = "none";
-            subcategoriasEstres.style.display = "none";
-            subcategoriasRelaciones.style.display = "none";
-            subcategoriasAutoestima.style.display = "none";
-          } else if (valor === "depresion") {
-            subcategoriasAnsiedad.style.display = "none";
-            subcategoriasDepresion.style.display = "block";
-            subcategoriasEstres.style.display = "none";
-            subcategoriasRelaciones.style.display = "none";
-            subcategoriasAutoestima.style.display = "none";
-          } else if (valor === "estres") {
-            subcategoriasAnsiedad.style.display = "none";
-            subcategoriasDepresion.style.display = "none";
-            subcategoriasEstres.style.display = "block";
-            subcategoriasRelaciones.style.display = "none";
-            subcategoriasAutoestima.style.display = "none";
-          } else if (valor === "relaciones") {
-            subcategoriasAnsiedad.style.display = "none";
-            subcategoriasDepresion.style.display = "none";
-            subcategoriasEstres.style.display = "none";
-            subcategoriasRelaciones.style.display = "block";
-            subcategoriasAutoestima.style.display = "none";
-          } else {
-            subcategoriasAnsiedad.style.display = "none";
-            subcategoriasDepresion.style.display = "none";
-            subcategoriasEstres.style.display = "none";
-            subcategoriasRelaciones.style.display = "none";
-          }
-        }
-      </script>
-      
-      
+      <script src="js/formulario.js"></script> 
 </body>
 </html>

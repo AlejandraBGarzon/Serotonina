@@ -1,14 +1,17 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap'); /*navbar */
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');/*icono*/
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-
+*{
+    box-sizing: border-box;
+}
 *{
     box-sizing: border-box;
 }
 p10{
-	font-family: 'Berkshire Swash', cursive;
-	letter-spacing: 5px;
-	font-size: 50px;
+	font-family: 'Bowlby One', cursive;
+	font-weight:bold ;
+	letter-spacing: 10px;
+	font-size: 30px;
 	color: #843f11;
 	display: contents;
 	border-radius: 3px solid #e3bebb;
@@ -42,31 +45,26 @@ nav li {
 	margin-right: 1.25rem;
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
-}	
+}
 
-.nav-item a {
+nav a {
 	display: flex;
-	text-decoration: none;
 	align-items:flex-start;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 2rem;
-	font-weight: bold;
-	color: #f26465	;
+	font-family: 'Bakbak One', cursive;
 }
 
 nav a h3 {
 	margin-top: auto;
-	font: size 1px;rem;
+	font-size:1.4rem;
 	font-family:'Raleway', sans-serif;
 	font-weight: bold;
 	color:#002244;
 	text-align: center;
 }
-.nav-item{
+.nav-item a{
 	padding: 0px 30px 20px 30px;
-	display: flex;
-
-
+	display: contents;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -74,25 +72,12 @@ nav a h3 {
 	max-width: 75rem;
 	margin: 0 auto;
 }
-
+/*
 .hero {
 	padding: 3.125rem;
 	position: relative;
   }
   
-  .hero::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-image: url('https://conidea.mx/wp-content/uploads/2021/11/inteligencia-emocional.jpg');
-	opacity: 0.8;
-	z-index: -1;
-	background-position: center center;
-	background-size: cover;
-  }
   
   .hero-content {
 	position: relative;
@@ -120,18 +105,19 @@ nav a h3 {
   }
   
   .hero .cta-button {
-	align-items: center;
+	align-self: flex-start;
   }
-  
+  */
   
 .cta-button {
-	background-color: #f26465;
-	background: linear-gradient(to bottom, #f26465, #c42b2c);
-	color: #f4f5f5;
+	background-color:#8c3cad;
+	color: #eaf2f8;
+	background: linear-gradient(to right, #8b3cad, #6d1a89cd);
 	display: inline-block;
-	font-family: Montserrat, sans-serif;
-	text-transform: capitalize;
-	font-size: 1.3rem;
+	font-family: Montserrat;
+	font-style: initial;
+	text-transform:capitalize;
+	font-size: 100%;
 	text-decoration: none;
 	font-weight: bold;
 	padding: 1% 1%;
@@ -139,10 +125,6 @@ nav a h3 {
 	border-width: 0;
 	margin: 0.938rem 9.375rem;
 }
-
-.cta-button:hover {
-	background-color: #d33e3f; 
-  }
 
 .services h2{
 	color:  #071a52;
@@ -216,11 +198,3 @@ nav a h3 {
 	width: 100%;
 	font-size: 30px;
   }
-
-
-  
-/* CSS PAGINA NOSOTROS */
-div.container{
-	display: block;
-	width: 100%;
-}
