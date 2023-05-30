@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formularios.css">
+
+    <title>Document</title>
+</head>
+<body>
+  <a id="inicio-link" href="index.html">Regresar al Inicio</a>
+
+    <form id="miFormulario">
+        <h2>Solicita una Evaluación Personalizada: Tu bienestar es nuestra prioridad</h2>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+      <br>
+      <br>
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" name="edad" required>
+      <br>
+      <br>
+      <label for="genero">¿Cuál es tu género?</label>
+      <select id="genero" name="genero">
+        <option value="">Selecciona una opción</option> 
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+        <option value="no-binario">No binario</option>
+        <option value="otro">Otro</option>
+        <option value="prefiero-no-declarar">Prefiero no declarar</option>
+      </select>
+      <br>
+      <br>
+        <label for="previous-services">¿Has tenido acceso a servicios de salud mental anteriormente?</label>
+        <select id="previous-services" name="previous-services" required>
+          <option value="">Selecciona una opción</option>
+          <option value="yes">Sí</option>
+          <option value="no">No</option>
+          <option value="not-sure">No estoy seguro/a</option>
+        </select>
+      <br>
+      <br>
+      <label for="motivo_consulta">¿Cuál es el motivo por el que buscas servicios de salud mental?</label>
+      <select id="motivo_busqueda" name="motivo_busqueda" required onchange="mostrarSubcategorias(this.value)">
+        <option value="">Selecciona una opción</option>
+        <option value="ansiedad">Ansiedad</option>
+        <option value="depresion">Depresión</option>
+        <option value="estres">Estrés</option>
+        <option value="relaciones">Problemas de relaciones</option>
+        <option value="autoestima">Baja autoestima</option>
+        <option value="no_sabe_motivo">Aún no lo sé</option>
+        <option value="otro">Otro</option>
+      </select><br><br>
+        
+      <div id="subcategorias_ansiedad" style="display: none;">
+        <label for="subcategoria_ansiedad">Elige una subcategoría de ansiedad:</label>
+        <select id="subcategoria_ansiedad" name="subcategoria_ansiedad">
+            <option value="">Selecciona una opción</option>
+          <option value="ataques_panic">Ataques de pánico</option>
+          <option value="trastorno_generalizado">Trastorno de ansiedad generalizada</option>
+          <option value="fobias">Fobias</option>
+          <option value="trastorno_obsesivo">Trastorno obsesivo-compulsivo (TOC)</option>
+          <option value="no_sabe_subA">No estoy segur@, necesito diagnóstico</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+
+      <div id="subcategorias_depresion" style="display: none;">
+        <label for="subcategoria_depresion">Elige una subcategoría de depresión:</label>
+        <select id="subcategoria_depresion" name="subcategoria_depresion">
+            <option value="">Selecciona una opción</option>
+          <option value="tdm">Trastorno depresivo mayor (TDM)</option>
+          <option value="distimia">Trastorno depresivo persistente (Distimia)</option>
+          <option value="tae">Trastorno afectivo estacional (TAE)</option>
+          <option value="depre_inducida">Depresión inducida por sustancias o medicamentos</option>
+          <option value="no_sabe_subD">No estoy segur@, necesito diagnóstico</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+      <div id="subcategorias_estres" style="display: none;">
+        <label for="subcategoria_estres">Elige una subcategoría de estrés:</label>
+        <select id="subcategoria_estres" name="subcategoria_estres">
+            <option value="">Selecciona una opción</option>
+          <option value="sobrecarga_laboral">Sobrecarga laboral</option>
+          <option value="presion_academica">Presión académica</option>
+          <option value="problemas_financieros">Problemas financieros</option>
+          <option value="relaciones_interpersonales">Problemas en relaciones interpersonales</option>
+          <option value="no_sabe_subE">No estoy segur@, necesito diagnóstico</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+      
+      <div id="subcategorias_relaciones" style="display: none;">
+        <label for="subcategoria_relaciones">Elige una subcategoría de problemas de relaciones:</label>
+        <select id="subcategoria_relaciones" name="subcategoria_relaciones">
+            <option value="">Selecciona una opción</option>
+          <option value="pareja">Problemas de pareja</option>
+          <option value="familia">Problemas familiares</option>
+          <option value="amigos">Problemas con amigos</option>
+          <option value="colegas">Problemas con colegas</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>         
+
+      <label for="especificar_motivo">Si seleccionaste "Otro", cuéntanos tu motivo:</label>
+    <textarea id="especificar_motivo" name="especificar_motivo" rows="4"></textarea>
+      <br>
+      <br>
+      <label for="enfoque">¿Deseas un enfoque específico?</label>
+<select id="enfoque" name="enfoque" onchange="mostrarEnfoques(this.value)">
+  <option value="no">No</option>
+  <option value="si">Sí</option>
+  <option value="no_sabe_enfoque">Aún no lo sé</option>
+</select>
+
+<div id="enfoques-terapeuticos" style="display: none;">
+  <label for="enfoques-psicologicos">Selecciona un enfoque terapéutico:</label>
+  <select id="enfoques-psicologicos" name="enfoques-psicologicos">
+    <option value="cognitivo-conductual">Enfoque cognitivo-conductual</option>
+    <option value="psicodinamico">Enfoque psicodinámico</option>
+    <option value="humanista">Enfoque humanista</option>
+    <option value="sistemico">Enfoque sistémico</option>
+    <option value="Otro">Otro</option>
+  </select>
+
+  <label for="otro-enfoque">Si seleccionaste "Otro", especifica el enfoque:</label>
+  <textarea id="otro-enfoque" name="otro-enfoque" rows="4"></textarea>
+</div>
+
+        <label for="perception">¿Qué tan preocupante consideras tu situación actual de salud mental?</label>
+        <select id="perception" name="perception" required>
+          <option value="">Selecciona una opción</option>
+          <option value="not-worried">No me preocupa</option>
+          <option value="slightly-worried">Preocupación leve</option>
+          <option value="moderately-worried">Preocupación moderada</option>
+          <option value="very-worried">Preocupación alta</option>
+          <option value="extremely-worried">Preocupación extrema</option>
+        </select>
+      <br>
+      <br>
+        <label for="additional-comments">Comentarios adicionales:</label>
+        <textarea id="additional-comments" name="additional-comments"></textarea>
+      <br>
+      <br>
+        <button type="submit">Enviar</button>
+      </form>
+     
+      <script src="js/formulario.js"></script> 
+</body>
+</html>
