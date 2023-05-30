@@ -1,2 +1,12 @@
-# Serotonina-Landing
-16 de mayo
+# [EN PROCESO]PROYECTO FINAL GENERATION COLOMBIA
+*La idea es crear una pagina enfocada a servicios psicologicos*
+
+
+*LENGUAJES USADOS HASTA EL MOMENTO*
+/LENGUAJES/
+-HTML
+-CSS
+-JAVASCRIPT
+
+/FRAMEWORK/
+-BOOTSTRAP
