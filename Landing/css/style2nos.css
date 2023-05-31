@@ -10,13 +10,14 @@ body {
 /* separador descripcion */
 
 nav ul { /*Etiqueta de las letras nav*/
-	display: flex;
+	display: block;
 	justify-content: center;
 	align-items: center;
-	font-weight: bolder;
+	font-weight:bolder;
 	width: 100%;
 	letter-spacing: 5px;
-
+	padding-bottom: 20px;
+	padding-top: 5px;
 
 	}
 nav li { /*Box del nav */
@@ -28,14 +29,21 @@ nav li { /*Box del nav */
 	text-align: center;
 	width: 100%;
 	font-size: 30px;
-	text-shadow: 2px 2px 3px #f26465 ;
+	text-shadow: 2px 2px 3px #f65555 ;
 }
 
 .nav-item a{ /*Fuente letra navbar*/
-	padding: 0px 30px 20px 30px;
 	display: contents;
     font-family: 'Montserrat', sans-serif;
-	font-weight: bolder;
+}
+#navbarin{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.container-fluid{
+	background-color: #e3bebb;
+	width: 100%;
+	padding: 0px;
 }
 /*img nav*/
 #gif1{
@@ -49,8 +57,24 @@ nav li { /*Box del nav */
 	text-align: center;
 	margin-left: 400px;
 	margin-right: 400px;
-	margin-bottom: 100px;
+	margin-bottom: 3px;
 	text-shadow: 3px 3px 2px #e3bebb ;
+}
+#imgdescription{
+	display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+	width: 700px;
+	margin: auto;
+
+}
+  /*Descripcion*/
+  #titledescription{
+	text-align: center;
+	color:#f26465;
+	font-size: 60px;
 }
 /*Equipo de trabajo*/
 #textacord {
@@ -83,13 +107,18 @@ nav li { /*Box del nav */
     justify-content: center;
 	text-align: center;
 }
+#accordeon{ /*Fondo color del bloque titulo*/
+    background-color: #e3bebb; 
+    color: inherit;
+	border: 0.5px solid #843f11;
+}
 /*Footer*/
 .footer{
 	background-color: #efe4e3;
 	font-family: 'Bowlby One', cursive;
 	width: 100%;
 	text-align: center;
-	margin: 10px 0px;
+	margin: 10px 0px 0px 0px;
 	padding: 2px;
 	
   }
@@ -103,15 +132,20 @@ nav li { /*Box del nav */
 	width: 100%;
 	font-size: 30px;
   }
+
+
   /*Logo y titulo*/
 #logoimg{
-	display: flex;
+	display: block;
     justify-content: center;
-    align-items: center;
     text-align: center;
     flex-direction: column;
 	margin-bottom: -35px;
 	width: 100%;
+	background: #e3bebb;
+	padding-top: 10px;
+	text-shadow: 2px 2px 3px #f65555 ;
+
 }
 #titlelogo{
     align-items: center;
@@ -125,13 +159,10 @@ nav li { /*Box del nav */
 	width: 100%;
 	display: flex;
 	border-radius: 5px solid #e3bebb;
+	background: #e3bebb;
+	text-shadow: 2px 2px 3px #f65555 ;	
 }
 
-#accordeon{ /*Fondo color del bloque titulo*/
-    background-color: #e3bebb; 
-    color: inherit;
-	border: 0.5px solid #843f11;
-}
 
 /* Figura curva sobre descripcion */
 .curved {
@@ -142,15 +173,8 @@ nav li { /*Box del nav */
 	border-bottom-right-radius: 60% 50%;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	border: 0.1px solid #843f11;	
+	align-items: center;	
   } 
   .centered {
 	text-align: center;
-  }
-  /*Descripcion*/
-#titledescription{
-	  text-align: center;
-	  color:#f26465;
-	  font-size: 60px;
   }
