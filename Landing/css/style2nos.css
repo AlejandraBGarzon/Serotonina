@@ -6,12 +6,13 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+/* separador descripcion */
+
 nav ul { /*Etiqueta de las letras nav*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: 'Raleway', sans-serif;
-	font-size: 1.25rem;
 	font-weight: bolder;
 	width: 100%;
 	letter-spacing: 5px;
@@ -26,7 +27,8 @@ nav li { /*Box del nav */
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
 	width: 100%;
-	font-size: 22px;
+	font-size: 30px;
+	text-shadow: 2px 2px 3px #f26465 ;
 }
 
 .nav-item a{ /*Fuente letra navbar*/
@@ -40,30 +42,29 @@ nav li { /*Box del nav */
 	align-items: center;
 	display: block;
 	margin: auto;
+	width: 100%;
 }
 /*Descripcion*/
-#titledescription{
-	text-align: center;
-	color: #843f11;
-	font-size: 60px;
-	font-family: ;
-}
-#description1{
+#description1{ /*Texto de descripcion*/
 	text-align: center;
 	margin-left: 400px;
 	margin-right: 400px;
 	margin-bottom: 100px;
+	text-shadow: 3px 3px 2px #e3bebb ;
 }
 /*Equipo de trabajo*/
-.accordion-body {
+#textacord {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
 	font-size: 30px;
-	margin-right: 300px;
-	margin-left: 300px;
+	background: #f5f4f4;
+	width: 100%;
+	padding-left: 350px;
+	padding-right: 350px;
+
 }
 /*Titulo del acordeon*/
 #titleacord1, #titleacord2, #titleacord3 {/*pendiente fuente*/
@@ -74,7 +75,7 @@ nav li { /*Box del nav */
 	width: 100%;
 	font-weight: bolder;
 	letter-spacing: 5px;
-
+	color: #7b8494;
 
 }
 .accordion-header {
@@ -110,6 +111,7 @@ nav li { /*Box del nav */
     text-align: center;
     flex-direction: column;
 	margin-bottom: -35px;
+	width: 100%;
 }
 #titlelogo{
     align-items: center;
@@ -117,21 +119,38 @@ nav li { /*Box del nav */
     flex-direction: column;
 	font-family: 'Bowlby One', cursive;
 	font-weight:bold;
-	letter-spacing: 6px;
-	font-size: 35px;
+	letter-spacing: 3px;
+	font-size: 50px;
 	color: #843f11;
+	width: 100%;
 	display: flex;
 	border-radius: 5px solid #e3bebb;
 }
-.accordion-button.collapsed {
-    background-color: #f5f4f4; /* Cambia a tu color de fondo deseado */
-    color: #000000; 
-	align-content: center;
+
+#accordeon{ /*Fondo color del bloque titulo*/
+    background-color: #e3bebb; 
+    color: inherit;
+	border: 0.5px solid #843f11;
 }
-.accordion-button:not(.collapsed) {
-    background-color: #981212; /* Cambia a tu color de fondo deseado */
-    color: #333; /* Cambia a tu color de texto deseado */
-}
-.accordion-open {
-    background-color: #f00000; /* Cambia a tu color de fondo deseado */
-}
+
+/* Figura curva sobre descripcion */
+.curved {
+	position: relative;
+	background: #e3bebb;
+	height: 20vh;
+	border-bottom-left-radius: 60% 50%;
+	border-bottom-right-radius: 60% 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 0.1px solid #843f11;	
+  } 
+  .centered {
+	text-align: center;
+  }
+  /*Descripcion*/
+#titledescription{
+	  text-align: center;
+	  color:#f26465;
+	  font-size: 60px;
+  }
