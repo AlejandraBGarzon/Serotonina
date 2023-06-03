@@ -1,95 +1,128 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap'); /*navbar */
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');/*icono*/
-
-*{
-    box-sizing: border-box;
-}
-p10{
-	font-family: 'Bowlby One', cursive;
-	font-weight:bold ;
-	letter-spacing: 10px;
-	font-size: 30px;
-	color: #843f11;
-	display: contents;
-	border-radius: 3px solid #e3bebb;
-}
 
 body {
 	font-family: 'Raleway', sans-serif;
 	margin: 0;
 	padding: 0;
-	
 }
 
-header {
-	background: #f5f4f4;
-}
+/* separador descripcion */
 
-nav ul {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		font-family: 'Raleway', sans-serif;
-		font-size: 1.25rem;
-		font-weight: bold;
-		width: 100%;
-		letter-spacing: 5px;
+nav ul { /*Etiqueta de las letras nav*/
+	display: block;
+	justify-content: center;
+	align-items: center;
+	font-weight:bolder;
+	width: 100%;
+	letter-spacing: 5px;
+	padding-bottom: 20px;
+	padding-top: 5px;
+
 	}
-nav li {
+nav li { /*Box del nav */
 	display: flex;
 	justify-content: space-evenly;
-	margin-left: 1.25rem;
-	margin-right: 1.25rem;
+	margin-left: 1.7rem;
+	margin-right: 1.7rem;
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
+	width: 100%;
+	font-size: 30px;
+	text-shadow: 2px 2px 3px #f65555 ;
 }
 
-nav a {
-	display: flex;
-	align-items:flex-start;
-	font-family: 'Bakbak One', cursive;
-}
-
-nav a h3 {
-	margin-top: auto;
-	font-size:1.4rem;
-	font-family:'Raleway', sans-serif;
-	font-weight: bold;
-	color:#002244;
-	text-align: center;
-}
-.nav-item a{
-	padding: 0px 30px 20px 30px;
+.nav-item a{ /*Fuente letra navbar*/
 	display: contents;
     font-family: 'Montserrat', sans-serif;
 }
-/*BODY*/
-.accordion-body{/*texto dentro del acordeon*/
-    text-align: center;
-    font-weight: bold;
+#navbarin{
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
-h7{
-    text-align: center;
+.container-fluid{
+	background-color: #e3bebb;
+	width: 100%;
+	padding: 0px;
 }
+/*img nav*/
+#gif1{
+	align-items: center;
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+/*Descripcion*/
+#description1{ /*Texto de descripcion*/
+	text-align: center;
+	margin-left: 400px;
+	margin-right: 400px;
+	margin-bottom: 3px;
+	text-shadow: 3px 3px 2px #e3bebb ;
+}
+#imgdescription{
+	display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+	width: 700px;
+	margin: auto;
 
+}
+  /*Descripcion*/
+  #titledescription{
+	text-align: center;
+	color:#f26465;
+	font-size: 60px;
+}
+/*Equipo de trabajo*/
+#textacord {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+	font-size: 30px;
+	background: #f5f4f4;
+	width: 100%;
+	padding-left: 350px;
+	padding-right: 350px;
 
+}
+/*Titulo del acordeon*/
+#titleacord1, #titleacord2, #titleacord3 {/*pendiente fuente*/
+    font-size: 26px;
+	display: flex;
+    justify-content: center;
+    text-align: center;
+	width: 100%;
+	font-weight: bolder;
+	letter-spacing: 5px;
+	color: #7b8494;
 
-
-
-
-/* FOOTER */
+}
+.accordion-header {
+    display: flex;
+    justify-content: center;
+	text-align: center;
+}
+#accordeon{ /*Fondo color del bloque titulo*/
+    background-color: #e3bebb; 
+    color: inherit;
+	border: 0.5px solid #843f11;
+}
+/*Footer*/
 .footer{
 	background-color: #efe4e3;
 	font-family: 'Bowlby One', cursive;
 	width: 100%;
 	text-align: center;
-	margin: 10px 0px;
+	margin: 10px 0px 0px 0px;
 	padding: 2px;
 	
   }
-  .footer-row{
+.footer-row{
 
 	width: 100%;
 	font-size: 30px;
@@ -98,4 +131,50 @@ h7{
 
 	width: 100%;
 	font-size: 30px;
+  }
+
+
+  /*Logo y titulo*/
+#logoimg{
+	display: block;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+	margin-bottom: -35px;
+	width: 100%;
+	background: #e3bebb;
+	padding-top: 10px;
+	text-shadow: 2px 2px 3px #f65555 ;
+
+}
+#titlelogo{
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+	font-family: 'Bowlby One', cursive;
+	font-weight:bold;
+	letter-spacing: 3px;
+	font-size: 50px;
+	color: #843f11;
+	width: 100%;
+	display: flex;
+	border-radius: 5px solid #e3bebb;
+	background: #e3bebb;
+	text-shadow: 2px 2px 3px #f65555 ;	
+}
+
+
+/* Figura curva sobre descripcion */
+.curved {
+	position: relative;
+	background: #e3bebb;
+	height: 20vh;
+	border-bottom-left-radius: 60% 50%;
+	border-bottom-right-radius: 60% 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+  } 
+  .centered {
+	text-align: center;
   }
