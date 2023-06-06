@@ -24,8 +24,8 @@ document.getElementById("contactForm").addEventListener("submit", function(event
 
 // Función de validación del campo de nombre
 function validateName() {
-  const nameInput = document.getElementById("name");
-  const nameValue = nameInput.value.trim();
+  let nameInput = document.getElementById("name");
+  let nameValue = nameInput.value.trim();
 
   if (nameValue === "") {
     setError(nameInput, "Por favor, ingresa tu nombre");
@@ -33,7 +33,7 @@ function validateName() {
   }
 
   // Validación de que el nombre no contenga números
-  const nameRegex = /^[^\d]+$/;
+  let nameRegex = /^[^\d]+$/;
   if (!nameRegex.test(nameValue)) {
     setError(nameInput, "El nombre no debe contener números");
     return false;
@@ -59,7 +59,7 @@ function validateEmail() {
   }
 
   // Validación de formato de email usando expresión regular
-  var emailRegex = /^\S+@\S+\.\S+$/;
+  let emailRegex = /^\S+@\S+\.\S+$/;
   if (!emailRegex.test(emailValue)) {
     setError(emailInput, "Por favor, ingresa un correo electrónico válido");
     return false;
@@ -84,7 +84,7 @@ function validatePhone() {
   }
 
   // Validación de formato de teléfono usando expresión regular
-  var phoneRegex = /^\d{10}$/; // Ejemplo: 1234567890 (10 dígitos)
+  let phoneRegex = /^\d{10}$/; // Ejemplo: 1234567890 (10 dígitos)
   if (!phoneRegex.test(phoneValue)) {
     setError(phoneInput, "Por favor, ingresa un número de teléfono válido");
     return false;
@@ -137,6 +137,7 @@ function sendMail() {
     email: document.getElementById("email").value,
     phone: document.getElementById("phone").value,
     message: document.getElementById("message").value,
+    fromName: "Contacto de Serotonina"
   };
 
   let serviceID = "gmail_service"; // ID del servicio de EmailJS
